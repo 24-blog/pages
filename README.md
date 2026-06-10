@@ -1,5 +1,5 @@
 Preview<br>
-https://24-blog.github.io/product/
+https://24-blog.github.io/pages/
 
 
 ⚠️COPYRIGHT<br>
