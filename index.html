@@ -4,11 +4,97 @@
 <meta charset="UTF-8">
   <link rel="icon" href="data:,">
 <title>24-blog</title>
+<style>
+  html, body {
+    background-color: #000;
+    color: #e0e0e0;
+  }
+  a {
+    color: #8fd3ff;
+  }
+  a:visited {
+    color: #c9a8ff;
+  }
+  hr {
+    border-top: 1px solid #555 !important;
+  }
+
+  /* ===== Pentagram ===== */
+  .pentagram-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0;
+    box-sizing: border-box;
+  }
+  .pentagram-svg {
+    display: block;
+    width: min(70vw, 360px);
+    height: min(70vw, 360px);
+    overflow: visible;
+  }
+  /* 静的な五芒星(線画) */
+  .pentagram-base {
+    fill: none;
+    stroke: #444;
+    stroke-width: 1.2;
+    stroke-linejoin: round;
+  }
+  /* 一筆書きで走る光線 */
+  .pentagram-trace {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 10px #8fd3ff);
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: draw-line 2.5s ease-in-out forwards;
+  }
+  @keyframes draw-line {
+    to { stroke-dashoffset: 0; }
+  }
+  /* 描き終わりと同時に全体ネオン発光（点灯後、定常的に光り続ける） */
+  .pentagram-glow {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1.5;
+    stroke-linejoin: round;
+    opacity: 0;
+    filter: drop-shadow(0 0 3px #fff)
+            drop-shadow(0 0 8px #8fd3ff)
+            drop-shadow(0 0 18px #8fd3ff)
+            drop-shadow(0 0 30px #5fb8ff);
+    animation: glow-on 1.2s ease-out 2.5s forwards;
+  }
+  @keyframes glow-on {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+</style>
 </head>
 <body>
 
+  <div class="pentagram-wrap">
+    <svg class="pentagram-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <!-- 静的な五芒星(線画) -->
+      <polygon class="pentagram-base"
+        points="100,10 152.9,172.8 14.4,72.2 185.6,72.2 47.1,172.8" />
+
+      <!-- 発光レイヤー -->
+      <polygon class="pentagram-glow"
+        points="100,10 152.9,172.8 14.4,72.2 185.6,72.2 47.1,172.8" />
+
+      <!-- 一筆書きで走る光線（頂点を始点・終点に） -->
+      <polygon class="pentagram-trace"
+        points="100,10 152.9,172.8 14.4,72.2 185.6,72.2 47.1,172.8 100,10" />
+    </svg>
+  </div>
+
   <p>
-  <div style="display: flex; align-items: center; gap: 10px;"><hr style="width: 50px; margin: 0; border: none; border-top: 1px solid black;"><span><a href="https://github.com/24-blog" target="_blank" rel="noopener">HOME</a></span></div>
+  <div style="display: flex; align-items: center; gap: 10px;"><hr style="width: 50px; margin: 0; border: none; border-top: 1px solid black;"><span><a href="https://codepen.io/24blog/pens/public" target="_blank" rel="noopener">CodePen</a></span></div>
   </p>
 
 <h1>2026</h1>
@@ -98,8 +184,6 @@ SPDX-License-Identifier∶AGPL-3.0 and CC-BY-NC-ND-4.0
 SPDX-License-Identifier∶AGPL-3.0 and CC-BY-NC-ND-4.0
 </p>
 
-<hr/>
-  
 <h2>Identifier</h2>
 <P>
 <a href="https://spdx.org/licenses/" target="_blank" rel="noopener">SPDX License List</a>
