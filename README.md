@@ -1,4 +1,4 @@
-[![License](https://img.shields.io/badge/license-UN-blue)](LICENSE)
+[![License](https://img.shields.io/github/license/24-blog/pages)](LICENSE)
 
 
 ⚠️COPYRIGHT<br>
