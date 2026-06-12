@@ -48,48 +48,108 @@
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
-    filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 10px #8fd3ff);
-    stroke-dasharray: 600;
-    stroke-dashoffset: 600;
-    animation: draw-line 2.5s ease-in-out forwards;
+    filter:
+      drop-shadow(0 0 4px #fff)
+      drop-shadow(0 0 12px #8fd3ff);
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw-line 3s ease-in-out forwards;
   }
+
   @keyframes draw-line {
     to { stroke-dashoffset: 0; }
   }
-  /* 描き終わりと同時に全体ネオン発光（点灯後、定常的に光り続ける） */
+
+  /* 柔らかいネオン発光 */
   .pentagram-glow {
     fill: none;
     stroke: #fff;
-    stroke-width: 1.5;
+    stroke-width: 1.6;
     stroke-linejoin: round;
     opacity: 0;
-    filter: drop-shadow(0 0 3px #fff)
-            drop-shadow(0 0 8px #8fd3ff)
-            drop-shadow(0 0 18px #8fd3ff)
-            drop-shadow(0 0 30px #5fb8ff);
-    animation: glow-on 1.2s ease-out 2.5s forwards;
+    filter:
+      drop-shadow(0 0 4px #fff)
+      drop-shadow(0 0 10px #8fd3ff)
+      drop-shadow(0 0 22px #8fd3ff)
+      drop-shadow(0 0 40px #5fb8ff);
+
+    animation:
+      glow-appear 2s ease-out 3s forwards,
+      breathing 6s ease-in-out infinite 5s;
   }
-  @keyframes glow-on {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
+
+  @keyframes glow-appear {
+    from { opacity: 0; }
+    to   { opacity: 1; }
   }
+
+  @keyframes breathing {
+    0%,100% { opacity: 0.88; }
+    50%     { opacity: 1; }
+  }
+
+/* ===== Mystic effects ===== */
+.pentagram-wrap{
+  position:relative;
+}
+
+.aura{
+  position:absolute;
+  width:220px;
+  height:220px;
+  border-radius:50%;
+  background:radial-gradient(circle,
+      rgba(160,220,255,.18) 0%,
+      rgba(140,120,255,.10) 45%,
+      transparent 75%);
+  animation:aura-expand 4s ease-out 3s forwards;
+  opacity:0;
+  filter:blur(10px);
+}
+
+@keyframes aura-expand{
+  0%{transform:scale(.2);opacity:0;}
+  40%{opacity:.8;}
+  100%{transform:scale(1.8);opacity:0;}
+}
+
+.particle{
+  position:absolute;
+  width:2px;
+  height:2px;
+  background:#fff;
+  border-radius:50%;
+  opacity:.3;
+  animation:float 8s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%,100%{transform:translateY(0px);opacity:.15;}
+  50%{transform:translateY(-18px);opacity:.45;}
+}
+
 </style>
 </head>
 <body>
 
   <div class="pentagram-wrap">
+<div class="aura"></div>
+<div class="particle" style="left:45%;top:25%;animation-delay:0s;"></div>
+<div class="particle" style="left:60%;top:35%;animation-delay:2s;"></div>
+<div class="particle" style="left:35%;top:60%;animation-delay:4s;"></div>
+
     <svg class="pentagram-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
       <!-- 静的な五芒星(線画) -->
       <polygon class="pentagram-base"
         points="100,10 152.9,172.8 14.4,72.2 185.6,72.2 47.1,172.8" />
 
       <!-- 発光レイヤー -->
-      <polygon class="pentagram-glow"
-        points="100,10 152.9,172.8 14.4,72.2 185.6,72.2 47.1,172.8" />
+      <path class="pentagram-glow"
+        d="M100,10 L152.9,172.8 L14.4,72.2 L185.6,72.2 L47.1,172.8 L100,10" />
 
       <!-- 一筆書きで走る光線（頂点を始点・終点に） -->
-      <polygon class="pentagram-trace"
-        points="100,10 152.9,172.8 14.4,72.2 185.6,72.2 47.1,172.8 100,10" />
+      <path class="pentagram-trace"
+        d="M100,10 L152.9,172.8 L14.4,72.2 L185.6,72.2 L47.1,172.8 L100,10" />
     </svg>
   </div>
 
