@@ -7,4 +7,4 @@ licensed under CC BY-NC-ND 4.0.
 
 
 > [!TIP]
-> It has not been added yet.
+> This URL has not been added yet.
