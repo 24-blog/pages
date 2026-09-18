@@ -4,4 +4,4 @@
 | https://24-blog.github.io/adr/ | 
 
 
->リンクは [target="_blank"] を使う
+>リンク∶ターゲット・ブランク
