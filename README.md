@@ -1,3 +1,4 @@
-### リスト未登録
-https://24-blog.github.io/demo/<br>
-https://24-blog.github.io/adr/
+| This URL must not be added to the list. | 
+| :--- | 
+| https://24-blog.github.io/demo/ |
+| https://24-blog.github.io/adr/ | 
