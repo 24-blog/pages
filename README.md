@@ -1,8 +1,8 @@
 | Unlisted URLs | 
 | :--- |
-| https://24-blog.github.io/post-search/ |
-| https://24-blog.github.io/demo/ |
-| https://24-blog.github.io/adr/ | 
+| https://github.com/24-blog/post-search/ |
+| https://github.com/24-blog/demo |
+| https://github.com/24-blog/adr/ | 
 
 アカウント (24-blog) 専用リードミー<br>
 アカウント (24-blog) IOページ<br>
