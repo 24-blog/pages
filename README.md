@@ -4,6 +4,6 @@
 | https://24-blog.github.io/demo/ |
 | https://24-blog.github.io/adr/ | 
 
-アカウント専用リードミー<br>
-アカウントのIOページ<br>
-本リポジトリ<br>
+アカウント (24-blog) 専用リードミー<br>
+アカウント (24-blog) のIOページ<br>
+本リポジトリ
