@@ -1,5 +1,6 @@
 | Unassigned URLs | 
 | :--- |
+| https://github.com/24-blog/feed |
 | [https://github.com/24-blog/codepen](https://github.com/24-blog/codepen-archive) |
 | https://github.com/24-blog/post-search |
 | https://github.com/24-blog/demo |
