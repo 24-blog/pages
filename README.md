@@ -10,3 +10,6 @@
 | Out of Scope / 対象外|
 | :--- |
 | https://github.com/24-blog/24-blog | 
+
+> [!IMPORTANT]
+> Totalは自動更新 (369行)
