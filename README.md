@@ -15,4 +15,4 @@
 | https://github.com/24-blog/24-blog | 
 
 > [!IMPORTANT]
-> Totalは手動更新 (369行)
+> Totalは手動更新 (371行)
