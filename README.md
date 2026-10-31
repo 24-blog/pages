@@ -15,4 +15,4 @@
 | https://github.com/24-blog/24-blog | 
 
 > [!IMPORTANT]
-> The total on line 371 must be updated manually.
+> The total on line 383 must be updated manually.
