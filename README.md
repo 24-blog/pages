@@ -6,7 +6,6 @@
 
 | Not indexed | 
 | :--- |
-
 | https://github.com/24-blog/adr | 
 | https://github.com/24-blog/post-search |
 | https://github.com/24-blog/feed |
