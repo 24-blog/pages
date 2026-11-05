@@ -1,6 +1,6 @@
 ### Indexing Status
 
-| Private | 
+| Private (Uncounted) | 
 | :--- |
 | https://github.com/24-blog/pll |
 
