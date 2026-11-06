@@ -10,12 +10,15 @@
 | https://github.com/24-blog/adr |
 | https://github.com/24-blog/pll |
 
-| Not indexed type-3| 
+| Not indexed type-3 | 
 | :--- |
-| https://github.com/24-blog/demo |
-| [https://github.com/24-blog/codepen](https://github.com/24-blog/codepen-archive) |
-| https://github.com/24-blog/pages |
 | https://github.com/24-blog/post-search |
+
+| Not indexed type-4| 
+| :--- |
+| [https://github.com/24-blog/codepen](https://github.com/24-blog/codepen-archive) |
+| https://github.com/24-blog/demo |
+| https://github.com/24-blog/pages |
 
 | Not indexable |
 | :--- |
