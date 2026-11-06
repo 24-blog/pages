@@ -8,7 +8,7 @@
 | Not indexed type-2 | 
 | :--- |
 | https://github.com/24-blog/adr |
-| https://github.com/24-blog/pll |
+| https://github.com/24-blog/pll 🔒️ |
 
 | Not indexed type-3 | 
 | :--- |
