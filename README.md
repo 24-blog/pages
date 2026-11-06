@@ -1,21 +1,24 @@
 ### Indexing Status
 
-| Private (Uncounted) | 
+| Not indexed type-1 | 
 | :--- |
+| [https://github.com/24-blog/github.io](https://github.com/24-blog/24-blog.github.io) |
+| https://github.com/24-blog/feed |
+
+| Not indexed type-2 | 
+| :--- |
+| https://github.com/24-blog/adr |
 | https://github.com/24-blog/pll |
 
-| Not indexed | 
+| Not indexed type-3| 
 | :--- |
-| https://github.com/24-blog/adr | 
+| https://github.com/24-blog/demo |
+| [https://github.com/24-blog/codepen](https://github.com/24-blog/codepen-archive) |
+| https://github.com/24-blog/pages |
 | https://github.com/24-blog/post-search |
-| https://github.com/24-blog/feed |
 
 | Not indexable |
 | :--- |
-| https://github.com/24-blog/pages |
-| https://github.com/24-blog/demo |
-| [https://github.com/24-blog/codepen](https://github.com/24-blog/codepen-archive) |
-| [https://github.com/24-blog/github.io](https://github.com/24-blog/24-blog.github.io) |
 | https://github.com/24-blog/24-blog | 
 
 
