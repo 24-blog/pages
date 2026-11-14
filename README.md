@@ -24,6 +24,7 @@
 | [https://github.com/24-blog/codepen](https://github.com/24-blog/codepen-archive) |
 | https://github.com/24-blog/24-blog | 
 
+※非公開はリポジトリ数にカウントされない
 
 > [!IMPORTANT]
 > The total on line 383 must be updated manually.
