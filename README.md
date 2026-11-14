@@ -26,4 +26,6 @@
 
 
 > [!IMPORTANT]
-> The total on line 383 must be updated manually. 🔒️非公開はNot Count
+> The total on line 383 must be updated manually.
+>
+> 🔒️非公開はNot Count
