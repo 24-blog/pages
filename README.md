@@ -2,18 +2,18 @@
 
 | Not indexed type-1 | 
 | :--- |
-| [https://github.com/24-blog/github.io](https://github.com/24-blog/24-blog.github.io) |
 | https://github.com/24-blog/feed |
+| [https://github.com/24-blog/github.io](https://github.com/24-blog/24-blog.github.io) |
 
 | Not indexed type-2 | 
 | :--- |
-| https://github.com/24-blog/adr |
 | https://github.com/24-blog/pll 🔒️ |
+| https://github.com/24-blog/adr |
 
 | Not indexed type-3 | 
 | :--- |
-| https://github.com/24-blog/post-search |
 | https://github.com/24-blog/solf |
+| https://github.com/24-blog/post-search |
 
 | Not indexed type-4| 
 | :--- |
