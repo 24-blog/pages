@@ -13,6 +13,7 @@
 | Not indexed type-3 | 
 | :--- |
 | https://github.com/24-blog/post-search |
+| https://github.com/24-blog/solf |
 
 | Not indexed type-4| 
 | :--- |
